@@ -1,0 +1,25 @@
+<mobilenames>
+<brand>
+<id> 11 </id>
+<name> Samsung </name>
+<unit price> 35000 </unit price>
+<stock> 50 </stock>
+<status> 1 </status>
+</brand>
+
+<brand>
+<id> 20 </id>
+<name> HTC  </name>
+<unit price> 65300 </unit price>
+<stock> 35 </stock>
+<status> 0 </status>
+</brand>
+
+<brand>
+<id> 23 </id>
+<name> Nokia </name>
+<unit price> 25100 </unit price>
+<stock> 100 </stock>
+<status> 1 </status>
+</brand> 
+</mobilenames>
