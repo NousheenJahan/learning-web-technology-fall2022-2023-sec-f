@@ -1,38 +1,15 @@
 <?php
+    $currentpassword = $_POST['currentpassword'];
+    $newpassword = $_POST['newpassword'];
+    $retypepassword = $_POST['retypepassword'];
 
-    $current_pass = $_POST['current_pass'];
+    $successful = FALSE;
 
-    $new_pass = $_POST['new_pass'];
-
-    $retyped_pass = $_POST['retyped_pass'];
-
-   
-
-   
-
-   
-
-    if($current_pass=="" || $new_pass=="" || $retyped_pass=="")
-
-    {echo "<h1>One or more fields are empty!</h1>";}
-
-   
-
-    else if($current_pass == $new_pass ){
-
-        echo "<h1>Validation failed: New password matches with the current one!</h1>";
-
+    if(($newpassword==$retypepassword) && ($currentpassword!=$newpassword)){
+        echo 'Password Changed Successfully';
     }
-
-    else if($retyped_pass == $new_pass){
-
-        echo "<h1>Validation Successful: Retyped password matches with the new one </h1>";
-
+    else{
+        echo 'Password did not changed';
     }
-
-      else{echo "<h1>Validation Failed, none of the passwords match! </h1>";}
-
-
-
 ?>
 
