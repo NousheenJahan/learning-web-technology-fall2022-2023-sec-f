@@ -1,16 +1,27 @@
 <?php
-    $name = $_POST['name'];
-    $buyingPrice = $_POST['buyingPrice'];
-    $sellingPrice = $_POST['sellingPrice'];
 
-    $con = mysqli_connect('localhost', 'root','', 'webtech');
-    $sql = "insert into product_db values('{$name}', '{$buyingPrice}', '{$sellingPrice}')";
-    $status = mysqli_query($con, $sql);
 
-    if($status){
-        echo "Product Add";
-    }
-    else{
-        echo "Not successful";
-    }
+
 ?>
+
+<html>
+    <head>
+        <title>Add Product</title>
+    </head>
+
+    <body>
+        <form method="post" action="addProductCheck.php" enctype="">
+            <fieldset>
+                <legend>ADD PRODUCT</legend>
+                Name<br>
+                <input type='text' name='name' value=''><br>
+                Buying Price:<br>
+                <input type='number' name='buyingPrice' value=''><br>
+                Selling Price:<br>
+                <input type='number' name='sellingPrice' value=''><br>
+                <hr>
+                <input type='submit' name='submit' value='Save'>
+            </fieldset>
+        </form>
+    </body>
+</html>
